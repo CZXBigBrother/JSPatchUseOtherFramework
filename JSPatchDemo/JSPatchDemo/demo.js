@@ -14,7 +14,7 @@ defineClass('ViewController : UIViewController <UIAlertViewDelegate,UITableViewD
   dataSource: function() {
     var data = self.data();
     if (data) return data;
-    var data = ["AFNetworking","MBProgressHUD","MagicalRecord","SDWebImage","MJRefresh","SAMKeychain","Masonry","MJExtension"];
+    var data = ["AFNetworking","MBProgressHUD","SDWebImage","MJRefresh","SAMKeychain","Masonry","MJExtension"];
     self.setData(data)
     return data;
   },
@@ -36,7 +36,7 @@ defineClass('ViewController : UIViewController <UIAlertViewDelegate,UITableViewD
     return 60
   },
   tableView_didSelectRowAtIndexPath: function(tableView, indexPath) {
-    var list = ["AFNClass","MBPClass","MagicalClass","SDWebClass","MJRefreshClass","SAMKeychainClass","MasonryClass","MJExtensionClass"];
+    var list = ["AFNClass","MBPClass","SDWebClass","MJRefreshClass","SAMKeychainClass","MasonryClass","MJExtensionClass"];
     var a = require(list[indexPath.row()]).alloc().init();
     self.navigationController().pushViewController_animated(a,YES);
 
@@ -45,28 +45,17 @@ defineClass('ViewController : UIViewController <UIAlertViewDelegate,UITableViewD
 //----------------------------------------AFNClass----------------------------------------------
 defineClass('AFNClass: UIViewController', {
   viewDidLoad: function() {
-    require('AFHTTPSessionManager,AFNetworking')
+    require('AFHTTPSessionManager,AFNetworking,NSProgress,NSURLSessionDataTask,NSError,AFHTTPResponseSerializer,NSString')
     self.ORIGviewDidLoad();
     self.setTitle("AFNClass")
     self.view().setBackgroundColor(UIColor.grayColor())
-//    var mgr = AFHTTPSessionManager.manager();
-//    mgr.setResponseSerializer(AFHTTPResponseSerializer.serializer());
-//    mgr.GET_parameters_progress_success_failure("https://www.baidu.com", null, block('NSProgress*', function(downloadProgress) {}), block("NSURLSessionDataTask*, id", function(task, responseObject) {
-//        console.log("success = %@", NSString.allocinitWithData.encoding(NSUTF8StringEncoding));
-//    }), block("NSURLSessionDataTask*, NSError*", function(task, error) {
-//        console.log("failure = %@", error);
-//    }));
-
-// AFHTTPSessionManager *mgr=[AFHTTPSessionManager manager];
-// mgr.responseSerializer=[AFHTTPResponseSerializer serializer];
-// mgr.requestSerializer.timeoutInterval=10;
-// [mgr GET:@"https://www.baidu.com" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-
-// } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//     NSLog(@"success = %@",[[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding]);
-// } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//     NSLog(@"failure = %@",error);
-// }];
+   var mgr = AFHTTPSessionManager.manager();
+   mgr.setResponseSerializer(AFHTTPResponseSerializer.serializer());
+   mgr.GET_parameters_progress_success_failure("https://www.baidu.com", null, block('NSProgress*', function(downloadProgress) {}), block("NSURLSessionDataTask*, id", function(task, responseObject) {
+       console.log("success = %@", NSString.alloc().initWithData_encoding(responseObject,4));
+   }), block("NSURLSessionDataTask*, NSError*", function(task, error) {
+       console.log("failure = %@", error);
+   }));
   },
 })
 //----------------------------------------MBPClass----------------------------------------------
@@ -83,13 +72,18 @@ defineClass('MBPClass:UIViewController',{
 //----------------------------------------MagicalClass----------------------------------------------
 defineClass('MagicalClass:UIViewController',{
   viewDidLoad: function() {
-    require('UIColor','User+CoreDataClass','NSManagedObjectContext','User','NSManagedObject','User+CoreDataProperties')
     self.ORIGviewDidLoad();
+    require('User,NSManagedObjectContext,CoreDataProperties')
     self.setTitle("MagicalClass")
     self.view().setBackgroundColor(UIColor.grayColor())
-require('MagicalRecord').setupCoreDataStackWithStoreNamed("database.sqlite");
-            
+    require('MagicalRecord').setupCoreDataStackWithStoreNamed("database.sqlite");
 
+    // var user = User.MR__createEntity()
+    // // user.setUserid(12)
+    // user.setUsername("mchen")
+    // NSManagedObjectContext.MR_defaultContext().MR__saveToPersistentStoreAndWait()
+    // console.log(User.MR__findAll().toJS())
+          
   },
 })
 //----------------------------------------SDWebClass----------------------------------------------
@@ -166,19 +160,47 @@ defineClass('SAMKeychainClass:UIViewController',{
 //----------------------------------------MasonryClass----------------------------------------------
 defineClass('MasonryClass:UIViewController',{
   viewDidLoad: function() {
-    require('UIColor')
+    require('UIView,MASConstraint,MASConstraintMaker')
     self.ORIGviewDidLoad();
     self.setTitle("MasonryClass")
     self.view().setBackgroundColor(UIColor.grayColor())
+    var testView = UIView.alloc().init()
+    self.view().addSubview(testView)
+    testView.setBackgroundColor(UIColor.redColor())
+    testView.mas__makeConstraints(block("MASConstraintMaker*",function(make){
+      make.top().equalTo()(self.view())
+      make.right().equalTo()(self.view())
+      make.left().equalTo()(self.view())
+      make.bottom().equalTo()(self.view())
+    }))
+    var testView2 = UIView.alloc().init();
+    self.view().addSubview(testView2);
+    testView2.setBackgroundColor(UIColor.greenColor())
+    testView2.mas__makeConstraints(block("MASConstraintMaker*",function(make){
+      make.top().equalTo()(testView.mas__topMargin()).offset()(100)
+      make.right().equalTo()(testView.mas__rightMargin());
+      make.left().equalTo()(testView.mas__leftMargin());
+      make.height().equalTo()(50)
+    }))
   },
 })
 //----------------------------------------MJExtensionClass----------------------------------------------
+defineClass('testModel:NSObject',['key1','key2'],{
+
+})
 defineClass('MJExtensionClass:UIViewController',{
   viewDidLoad: function() {
-    require('UIColor')
     self.ORIGviewDidLoad();
     self.setTitle("MJExtensionClass")
     self.view().setBackgroundColor(UIColor.grayColor())
+    require('testModel')
+    var test = {
+      "key1": "value1",
+      "key2": "values"
+    };
+    var model = testModel.mj__objectWithKeyValues(test)
+    console.log(model.key1())
+    console.log(model.key2())
   },
 })
 

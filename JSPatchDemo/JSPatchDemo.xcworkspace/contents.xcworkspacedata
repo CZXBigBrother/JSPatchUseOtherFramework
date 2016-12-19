@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:JSPatchDemo/User+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:JSPatchDemo/User+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
       location = "group:JSPatchDemo.xcodeproj">
    </FileRef>
    <FileRef
