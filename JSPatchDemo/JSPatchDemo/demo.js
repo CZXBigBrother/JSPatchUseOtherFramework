@@ -70,22 +70,21 @@ defineClass('MBPClass:UIViewController',{
   },
 })
 //----------------------------------------MagicalClass----------------------------------------------
-defineClass('MagicalClass:UIViewController',{
-  viewDidLoad: function() {
-    self.ORIGviewDidLoad();
-    require('User,NSManagedObjectContext,CoreDataProperties')
-    self.setTitle("MagicalClass")
-    self.view().setBackgroundColor(UIColor.grayColor())
-    require('MagicalRecord').setupCoreDataStackWithStoreNamed("database.sqlite");
+// defineClass('MagicalClass:UIViewController',{
+//   viewDidLoad: function() {
+//     self.ORIGviewDidLoad();
+//     require('User,NSManagedObjectContext,CoreDataProperties')
+//     self.setTitle("MagicalClass")
+//     self.view().setBackgroundColor(UIColor.grayColor())
+//     require('MagicalRecord').setupCoreDataStackWithStoreNamed("database.sqlite");
 
     // var user = User.MR__createEntity()
     // // user.setUserid(12)
     // user.setUsername("mchen")
     // NSManagedObjectContext.MR_defaultContext().MR__saveToPersistentStoreAndWait()
-    // console.log(User.MR__findAll().toJS())
-          
-  },
-})
+    // console.log(User.MR__findAll().toJS())     
+//   },
+// })
 //----------------------------------------SDWebClass----------------------------------------------
 defineClass('SDWebClass:UIViewController',{
   viewDidLoad: function() {
