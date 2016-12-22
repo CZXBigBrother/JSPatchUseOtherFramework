@@ -20,6 +20,11 @@
     NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"js"];
     NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
     [JPEngine evaluateScript:script];
+    
+    NSString *afn = [[NSBundle mainBundle] pathForResource:@"afn" ofType:@"js"];
+    NSString *safn = [NSString stringWithContentsOfFile:afn encoding:NSUTF8StringEncoding error:nil];
+    [JPEngine evaluateScript:safn];
+    return YES;
     return YES;
 }
 

@@ -10,6 +10,7 @@
 		326179AAFED9740B323F9990 /* libPods-JSPatchDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E48979797C4A8BF3AFAA642 /* libPods-JSPatchDemo.a */; };
 		411F2E031E078A0800C2D686 /* Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 411F2E011E078A0800C2D686 /* Demo.xcdatamodeld */; };
 		41221CD11E06DC8500D5BACB /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 41221CD01E06DC8500D5BACB /* demo.js */; };
+		41830EC91E0B7B5B0038B954 /* afn.js in Resources */ = {isa = PBXBuildFile; fileRef = 41830EC81E0B7B5B0038B954 /* afn.js */; };
 		41E3FBD11E057313003EFECE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FBD01E057313003EFECE /* main.m */; };
 		41E3FBD41E057313003EFECE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FBD31E057313003EFECE /* AppDelegate.m */; };
 		41E3FBD71E057313003EFECE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FBD61E057313003EFECE /* ViewController.m */; };
@@ -42,6 +43,7 @@
 		3EE2D69EA642D34E0AEB4F5E /* Pods-JSPatchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSPatchDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSPatchDemo/Pods-JSPatchDemo.release.xcconfig"; sourceTree = "<group>"; };
 		411F2E021E078A0800C2D686 /* Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Demo.xcdatamodel; sourceTree = "<group>"; };
 		41221CD01E06DC8500D5BACB /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		41830EC81E0B7B5B0038B954 /* afn.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = afn.js; sourceTree = "<group>"; };
 		41E3FBCC1E057313003EFECE /* JSPatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSPatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E3FBD01E057313003EFECE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41E3FBD21E057313003EFECE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		41E3FBCE1E057313003EFECE /* JSPatchDemo */ = {
 			isa = PBXGroup;
 			children = (
+				41830EC81E0B7B5B0038B954 /* afn.js */,
 				41221CD01E06DC8500D5BACB /* demo.js */,
 				411F2E011E078A0800C2D686 /* Demo.xcdatamodeld */,
 				41E3FBD21E057313003EFECE /* AppDelegate.h */,
@@ -282,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41830EC91E0B7B5B0038B954 /* afn.js in Resources */,
 				41E3FBDF1E057313003EFECE /* LaunchScreen.storyboard in Resources */,
 				41E3FBDC1E057313003EFECE /* Assets.xcassets in Resources */,
 				41E3FBDA1E057313003EFECE /* Main.storyboard in Resources */,
