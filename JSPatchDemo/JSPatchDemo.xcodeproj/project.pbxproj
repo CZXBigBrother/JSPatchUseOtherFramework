@@ -10,7 +10,13 @@
 		326179AAFED9740B323F9990 /* libPods-JSPatchDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E48979797C4A8BF3AFAA642 /* libPods-JSPatchDemo.a */; };
 		411F2E031E078A0800C2D686 /* Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 411F2E011E078A0800C2D686 /* Demo.xcdatamodeld */; };
 		41221CD11E06DC8500D5BACB /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 41221CD01E06DC8500D5BACB /* demo.js */; };
-		41830EC91E0B7B5B0038B954 /* afn.js in Resources */ = {isa = PBXBuildFile; fileRef = 41830EC81E0B7B5B0038B954 /* afn.js */; };
+		41830EC91E0B7B5B0038B954 /* AFNetworking.js in Resources */ = {isa = PBXBuildFile; fileRef = 41830EC81E0B7B5B0038B954 /* AFNetworking.js */; };
+		41D8ED071E120C7D00C3BBE7 /* Masonry.js in Resources */ = {isa = PBXBuildFile; fileRef = 41D8ED011E120C7D00C3BBE7 /* Masonry.js */; };
+		41D8ED081E120C7D00C3BBE7 /* MBProgressHUD.js in Resources */ = {isa = PBXBuildFile; fileRef = 41D8ED021E120C7D00C3BBE7 /* MBProgressHUD.js */; };
+		41D8ED091E120C7D00C3BBE7 /* MJExtension.js in Resources */ = {isa = PBXBuildFile; fileRef = 41D8ED031E120C7D00C3BBE7 /* MJExtension.js */; };
+		41D8ED0A1E120C7D00C3BBE7 /* MJRefresh.js in Resources */ = {isa = PBXBuildFile; fileRef = 41D8ED041E120C7D00C3BBE7 /* MJRefresh.js */; };
+		41D8ED0B1E120C7D00C3BBE7 /* SAMKeychain.js in Resources */ = {isa = PBXBuildFile; fileRef = 41D8ED051E120C7D00C3BBE7 /* SAMKeychain.js */; };
+		41D8ED0C1E120C7D00C3BBE7 /* SDWebImage.js in Resources */ = {isa = PBXBuildFile; fileRef = 41D8ED061E120C7D00C3BBE7 /* SDWebImage.js */; };
 		41E3FBD11E057313003EFECE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FBD01E057313003EFECE /* main.m */; };
 		41E3FBD41E057313003EFECE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FBD31E057313003EFECE /* AppDelegate.m */; };
 		41E3FBD71E057313003EFECE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FBD61E057313003EFECE /* ViewController.m */; };
@@ -43,7 +49,13 @@
 		3EE2D69EA642D34E0AEB4F5E /* Pods-JSPatchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSPatchDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSPatchDemo/Pods-JSPatchDemo.release.xcconfig"; sourceTree = "<group>"; };
 		411F2E021E078A0800C2D686 /* Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Demo.xcdatamodel; sourceTree = "<group>"; };
 		41221CD01E06DC8500D5BACB /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
-		41830EC81E0B7B5B0038B954 /* afn.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = afn.js; sourceTree = "<group>"; };
+		41830EC81E0B7B5B0038B954 /* AFNetworking.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AFNetworking.js; sourceTree = "<group>"; };
+		41D8ED011E120C7D00C3BBE7 /* Masonry.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Masonry.js; sourceTree = "<group>"; };
+		41D8ED021E120C7D00C3BBE7 /* MBProgressHUD.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = MBProgressHUD.js; sourceTree = "<group>"; };
+		41D8ED031E120C7D00C3BBE7 /* MJExtension.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = MJExtension.js; sourceTree = "<group>"; };
+		41D8ED041E120C7D00C3BBE7 /* MJRefresh.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = MJRefresh.js; sourceTree = "<group>"; };
+		41D8ED051E120C7D00C3BBE7 /* SAMKeychain.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = SAMKeychain.js; sourceTree = "<group>"; };
+		41D8ED061E120C7D00C3BBE7 /* SDWebImage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = SDWebImage.js; sourceTree = "<group>"; };
 		41E3FBCC1E057313003EFECE /* JSPatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSPatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E3FBD01E057313003EFECE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41E3FBD21E057313003EFECE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,8 +126,14 @@
 		41E3FBCE1E057313003EFECE /* JSPatchDemo */ = {
 			isa = PBXGroup;
 			children = (
-				41830EC81E0B7B5B0038B954 /* afn.js */,
+				41830EC81E0B7B5B0038B954 /* AFNetworking.js */,
 				41221CD01E06DC8500D5BACB /* demo.js */,
+				41D8ED011E120C7D00C3BBE7 /* Masonry.js */,
+				41D8ED021E120C7D00C3BBE7 /* MBProgressHUD.js */,
+				41D8ED031E120C7D00C3BBE7 /* MJExtension.js */,
+				41D8ED041E120C7D00C3BBE7 /* MJRefresh.js */,
+				41D8ED051E120C7D00C3BBE7 /* SAMKeychain.js */,
+				41D8ED061E120C7D00C3BBE7 /* SDWebImage.js */,
 				411F2E011E078A0800C2D686 /* Demo.xcdatamodeld */,
 				41E3FBD21E057313003EFECE /* AppDelegate.h */,
 				41E3FBD31E057313003EFECE /* AppDelegate.m */,
@@ -285,11 +303,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41830EC91E0B7B5B0038B954 /* afn.js in Resources */,
+				41830EC91E0B7B5B0038B954 /* AFNetworking.js in Resources */,
+				41D8ED0C1E120C7D00C3BBE7 /* SDWebImage.js in Resources */,
 				41E3FBDF1E057313003EFECE /* LaunchScreen.storyboard in Resources */,
 				41E3FBDC1E057313003EFECE /* Assets.xcassets in Resources */,
 				41E3FBDA1E057313003EFECE /* Main.storyboard in Resources */,
+				41D8ED071E120C7D00C3BBE7 /* Masonry.js in Resources */,
+				41D8ED091E120C7D00C3BBE7 /* MJExtension.js in Resources */,
+				41D8ED0B1E120C7D00C3BBE7 /* SAMKeychain.js in Resources */,
+				41D8ED0A1E120C7D00C3BBE7 /* MJRefresh.js in Resources */,
 				41221CD11E06DC8500D5BACB /* demo.js in Resources */,
+				41D8ED081E120C7D00C3BBE7 /* MBProgressHUD.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

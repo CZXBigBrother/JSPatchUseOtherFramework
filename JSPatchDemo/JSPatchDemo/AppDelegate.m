@@ -21,9 +21,12 @@
     NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
     [JPEngine evaluateScript:script];
     
-    NSString *afn = [[NSBundle mainBundle] pathForResource:@"afn" ofType:@"js"];
-    NSString *safn = [NSString stringWithContentsOfFile:afn encoding:NSUTF8StringEncoding error:nil];
-    [JPEngine evaluateScript:safn];
+    NSArray * arr = @[@"AFNetworking",@"MBProgressHUD",@"SDWebImage",@"MJRefresh",@"SAMKeychain",@"Masonry",@"MJExtension"];
+    for (NSString * onPod in arr) {
+        NSString *afn = [[NSBundle mainBundle] pathForResource:onPod ofType:@"js"];
+        NSString *safn = [NSString stringWithContentsOfFile:afn encoding:NSUTF8StringEncoding error:nil];
+        [JPEngine evaluateScript:safn];
+    }
     return YES;
     return YES;
 }
